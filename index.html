@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LeetMetric</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>LeetMetric</h1>
+
+    <div class="user-container">
+      <p>Enter your username below:</p>
+      <div class="user-input-container">
+        <input
+          type="text"
+          placeholder="Try: demo, leetcode, or your username"
+          id="user-input"
+        />
+        <button id="search-btn">Search</button>
+      </div>
+      <div
+        style="margin-top: 1rem; padding: 0.5rem; background: rgba(72, 219, 251, 0.1); border-radius: 8px; font-size: 0.9rem; color: rgba(255, 255, 255, 0.8);"
+      >
+        💡 <strong>Tip:</strong> Type "demo" to see sample data, or try real
+        usernames like "leetcode"
+      </div>
+    </div>
+
+    <div class="stats-container">
+      <div class="progress">
+        <div class="progress-item">
+          <div class="easy-progress circle">
+            <span id="easy-label">0/0</span>
+            <p>Easy</p>
+          </div>
+        </div>
+
+        <div class="progress-item">
+          <div class="medium-progress circle">
+            <span id="medium-label">0/0</span>
+            <p>Medium</p>
+          </div>
+        </div>
+
+        <div class="progress-item">
+          <div class="hard-progress circle">
+            <span id="hard-label">0/0</span>
+            <p>Hard</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats-cards">
+        <!-- Cards will be populated by JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
